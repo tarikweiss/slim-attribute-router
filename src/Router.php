@@ -71,11 +71,14 @@ class Router
                 RegexIterator::GET_MATCH
             );
 
-            /** @var string $classFilePath */
-            foreach ($classFilePathIterator as $classFilePath) {
-                require_once $classFilePath;
+            /** @var string[] $classFilePaths */
+            foreach ($classFilePathIterator as $classFilePaths) {
+                foreach ($classFilePaths as $classFilePath) {
+                    require_once $classFilePath;
 
-                $includedClassFilePaths[] = $classFilePath;
+                    $includedClassFilePaths[] = $classFilePath;
+                }
+
             }
         }
 
