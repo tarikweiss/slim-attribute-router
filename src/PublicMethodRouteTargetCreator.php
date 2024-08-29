@@ -4,7 +4,7 @@ namespace Tarikweiss\SlimAttributeRouter;
 
 use Tarikweiss\SlimAttributeRouter\RouteTargetCreator;
 
-class PublicMethodRouteCreator implements RouteTargetCreator
+class PublicMethodRouteTargetCreator implements RouteTargetCreator
 {
     public function __construct(
         public string $classLevelMethodName = 'run'
