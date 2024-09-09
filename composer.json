@@ -1,7 +1,7 @@
 {
   "name": "tarikweiss/slim-attribute-router",
   "description": "A simple library for applying routing with attributes.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "library",
   "keywords": [
     "slim",
