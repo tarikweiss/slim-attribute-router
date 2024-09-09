@@ -76,7 +76,7 @@ class Router
                 foreach ($classFilePaths as $classFilePath) {
                     require_once $classFilePath;
 
-                    $includedClassFilePaths[] = $classFilePath;
+                    $includedClassFilePaths[] = realpath($classFilePath);
                 }
 
             }
